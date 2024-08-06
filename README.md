@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Barber Hub
 
-## Getting Started
+## Descrição
 
-First, run the development server:
+O **Barber Hub** é uma aplicação full stack desenvolvida para conectar clientes com as melhores barbearias da região, oferecendo uma experiência intuitiva e completa para encontrar, avaliar e agendar serviços de barbearia. O sistema é projetado para fornecer uma interface amigável e funcionalidades robustas tanto para os clientes quanto para as barbearias.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Tecnologias Utilizadas
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Next.js**: Framework para desenvolvimento de aplicações React com renderização do lado do servidor.
+- **React.js**: Biblioteca para construção de interfaces de usuário.
+- **PostgreSQL**: Sistema de gerenciamento de banco de dados relacional.
+- **Tailwind CSS**: Framework para estilização de interfaces com classes utilitárias.
+- **Prisma**: ORM (Object-Relational Mapper) para trabalhar com bancos de dados SQL.
+- **Node.js**: Ambiente de execução para JavaScript no lado do servidor.
+- **ShadCN**: Biblioteca para componentes de interface.
+- **TypeScript**: Superset do JavaScript que adiciona tipagem estática.
+- **JavaScript**: Linguagem de programação principal para o desenvolvimento da aplicação.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Cronograma
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+**05/08 a 12/08**
 
-## Learn More
+- **Aula 0**: Setup e apresentação do projeto
+- **Aula 1**: Tela inicial
+- **Aula 2**: Detalhes da barbearia
+- **Aula 3**: Login com o Google
+- **Aula 4**: Reserva de um barbeiro
+- **Aula 5**: Tela de agendamentos
+- **Aula 6**: Deploy e revisão do projeto
 
-To learn more about Next.js, take a look at the following resources:
+## Funcionalidades
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Tela Inicial**: Visão geral das barbearias disponíveis, com opções para buscar e filtrar.
+- **Detalhes da Barbearia**: Informações detalhadas sobre cada barbearia, incluindo serviços, avaliações e localização.
+- **Login com Google**: Integração com o Google para autenticação de usuários.
+- **Reserva de um Barbeiro**: Funcionalidade para agendar serviços com uma barbearia específica.
+- **Tela de Agendamentos**: Visualização sobre a baerbearia e reserva de serviços.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Instalação e Configuração
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/Kianelc/barberhub-project.git
+   ```
+2. Navegue até o diretório do projeto:
+   ```bash
+   cd barber-hub
+   ```
+3. Instale as dependências:
+   ```bash
+   npm install
+   ```
+4. Configure as variáveis de ambiente:
+   - Crie um arquivo `.env` na raiz do projeto e adicione suas variáveis de ambiente (consulte o arquivo `.env.example` para mais detalhes).
+5. Inicialize o banco de dados:
+   ```bash
+   npx prisma migrate dev
+   ```
+6. Inicie o servidor de desenvolvimento:
+   ```bash
+   npm run dev
+   ```
